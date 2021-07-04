@@ -5,9 +5,8 @@ const refs = {
 refs.input.addEventListener("blur", onBlurLose);
 
 function onBlurLose(event) {
-  const value = event.currentTarget.value;
-  const a =
-    value.length < refs.length.dataset.length
+  const length =
+    event.currentTarget.value.length < refs.length.dataset.length
       ? refs.input.classList.add("invalid")
       : refs.input.classList.replace("invalid", "valid");
 }
