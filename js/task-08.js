@@ -24,5 +24,5 @@ function createBoxes() {
 
 function destroyBoxes() {
   refs.input.value = "";
-  refs.boxes.remove("div");
+  refs.boxes.innerHTML = "";
 }
